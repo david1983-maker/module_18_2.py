@@ -7,5 +7,6 @@ def index(request):
     return render(request, 'class_template.html')
 
 
-def index2(request):
-    return render(request, 'func_template.html')
+class index2(TemplateView):
+    template_name = 'func_template.html'
+   
